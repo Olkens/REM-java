@@ -27,7 +27,9 @@ public class Person implements UserDetails {
             inverseJoinColumns = {@JoinColumn(name = "role_id")}
     )
     private Set<Role> authorities;
-    private String company;
+
+    @OneToOne(cascade = CascadeType.REFRESH)
+    private Company company;
 
 
     public Person() {
@@ -73,11 +75,11 @@ public class Person implements UserDetails {
         this.authorities = authorities;
     }
 
-    public String getCompany() {
+    public Company getCompany() {
         return company;
     }
 
-    public void setCompany(String company) {
+    public void setCompany(Company company) {
         this.company = company;
     }
 

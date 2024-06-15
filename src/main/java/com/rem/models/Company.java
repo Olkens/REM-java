@@ -22,6 +22,9 @@ public class Company {
         this.taxIdNumber = taxIdNumber;
     }
 
+    public Company() {
+    }
+
     public Long getCompanyId() {
         return companyId;
     }

@@ -1,19 +1,8 @@
 package com.rem.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.persistence.*;
 
 @Entity
-@NoArgsConstructor
-@Getter
-@Setter
-@AllArgsConstructor
 public class RealEstate {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -22,6 +11,21 @@ public class RealEstate {
     private Double cubicMeters;
     private String owner;
     private Double price;
+    @OneToOne(cascade = CascadeType.ALL)
+    private Address address;
+
+
+    public RealEstate(Long realEstateId, String name, Double cubicMeters, String owner, Double price, Address address) {
+        this.realEstateId = realEstateId;
+        this.name = name;
+        this.cubicMeters = cubicMeters;
+        this.owner = owner;
+        this.price = price;
+        this.address = address;
+    }
+
+    public RealEstate() {
+    }
 
     public Long getRealEstateId() {
         return realEstateId;
@@ -61,5 +65,13 @@ public class RealEstate {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }
