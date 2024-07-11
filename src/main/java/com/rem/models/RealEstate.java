@@ -1,5 +1,6 @@
 package com.rem.models;
 
+import com.rem.dto.realEstate.RealEstateDTO;
 import jakarta.persistence.*;
 
 @Entity
@@ -73,5 +74,12 @@ public class RealEstate {
 
     public void setAddress(Address address) {
         this.address = address;
+    }
+
+    public void updateProperties(RealEstateDTO realEstateDTO) {
+        this.setName(realEstateDTO.name);
+        this.setCubicMeters(realEstateDTO.cubicMeters);
+        this.setPrice(realEstateDTO.price);
+        this.setName(realEstateDTO.name);
     }
 }

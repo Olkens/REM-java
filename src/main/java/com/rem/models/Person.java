@@ -102,4 +102,8 @@ public class Person implements UserDetails {
     public boolean isEnabled() {
         return UserDetails.super.isEnabled();
     }
+
+    public void addNewRole(Role role){
+        this.authorities.add(role);
+    }
 }

@@ -47,7 +47,6 @@ public class AuthService {
     }
 
     public LoginResponseDTO login(String username, String password) {
-
         try {
             Authentication authentication = authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(username,password)
