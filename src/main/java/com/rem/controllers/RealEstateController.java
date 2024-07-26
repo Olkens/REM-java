@@ -22,29 +22,33 @@ public class RealEstateController {
     }
 
     @GetMapping("/")
-    public List<RealEstate> getAllRealEstates() {
-        return realEstateService.getAllRealEstates();
+    public ResponseEntity<List<RealEstate>> getAllRealEstates() {
+        List<RealEstate> realEstates = realEstateService.getAllRealEstates();
+        return ResponseEntity.ok(realEstates);
     }
 
     @Secured("ROLE_COMPANY_USER")
     @PostMapping("/")
-    public RealEstate saveRealEstate(@RequestBody RealEstateDTO dto) {
-        return realEstateService.saveRealEstate(dto);
+    public ResponseEntity<RealEstate> saveRealEstate(@RequestBody RealEstateDTO dto) {
+        RealEstate realEstate = realEstateService.saveRealEstate(dto);
+        return ResponseEntity.ok(realEstate);
     }
 
     @GetMapping("/{id}")
-    public RealEstate getRealEstateById(@PathVariable long id) {
-        return realEstateService.getRealEstate(id);
+    public ResponseEntity<RealEstate> getRealEstateById(@PathVariable long id) {
+        RealEstate realEstate = realEstateService.getRealEstate(id);
+        return ResponseEntity.ok(realEstate);
     }
 
     @PutMapping("/{id}")
-    public RealEstate updateRealEstate(@PathVariable long id, @RequestBody RealEstateDTO dto) {
-        return realEstateService.updateRealEstate(id, dto);
+    public ResponseEntity<RealEstate> updateRealEstate(@PathVariable long id, @RequestBody RealEstateDTO dto) {
+        RealEstate realEstate = realEstateService.updateRealEstate(id, dto);
+        return ResponseEntity.ok(realEstate);
     }
 
     @DeleteMapping("/{id}")
-    public String deleteRealEstate(@PathVariable long id) {
+    public ResponseEntity<String> deleteRealEstate(@PathVariable long id) {
         realEstateService.deleteRealEstate(id);
-        return new ResponseEntity<>("Real estate deleted successfully!",HttpStatus.OK).getBody();
+        return ResponseEntity.ok("Real estate deleted successfully!");
     }
 }
