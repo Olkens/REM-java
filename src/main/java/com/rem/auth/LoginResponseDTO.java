@@ -1,6 +1,6 @@
-package com.rem.dto;
+package com.rem.auth;
 
-import com.rem.models.Person;
+import com.rem.person.Person;
 
 public class LoginResponseDTO {
     private Person person;

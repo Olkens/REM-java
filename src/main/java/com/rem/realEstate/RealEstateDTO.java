@@ -1,6 +1,6 @@
-package com.rem.dto.realEstate;
+package com.rem.realEstate;
 
-import com.rem.dto.address.AddressDTO;
+import com.rem.address.AddressDTO;
 
 public class RealEstateDTO {
     public String name;

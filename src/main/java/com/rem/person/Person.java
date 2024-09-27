@@ -1,5 +1,7 @@
-package com.rem.models;
+package com.rem.person;
 
+import com.rem.company.Company;
+import com.rem.role.Role;
 import jakarta.persistence.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

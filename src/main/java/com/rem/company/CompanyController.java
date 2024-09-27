@@ -1,6 +1,5 @@
-package com.rem.controllers;
+package com.rem.company;
 
-import com.rem.services.CompanyService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

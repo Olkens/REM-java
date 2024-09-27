@@ -1,6 +1,6 @@
-package com.rem.models;
+package com.rem.realEstate;
 
-import com.rem.dto.realEstate.RealEstateDTO;
+import com.rem.address.Address;
 import jakarta.persistence.*;
 
 @Entity

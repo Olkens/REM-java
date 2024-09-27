@@ -1,6 +1,6 @@
 package com.rem.repository;
 
-import com.rem.models.RealEstate;
+import com.rem.realEstate.RealEstate;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

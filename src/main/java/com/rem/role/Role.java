@@ -1,4 +1,4 @@
-package com.rem.models;
+package com.rem.role;
 
 
 import jakarta.persistence.*;

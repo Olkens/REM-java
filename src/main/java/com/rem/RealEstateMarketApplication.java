@@ -1,7 +1,7 @@
 package com.rem;
 
-import com.rem.models.Person;
-import com.rem.models.Role;
+import com.rem.person.Person;
+import com.rem.role.Role;
 import com.rem.repository.PersonRepository;
 import com.rem.repository.RoleRepository;
 import org.springframework.boot.CommandLineRunner;

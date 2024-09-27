@@ -1,4 +1,4 @@
-package com.rem.models;
+package com.rem.company;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

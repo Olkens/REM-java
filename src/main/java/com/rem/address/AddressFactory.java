@@ -1,9 +1,7 @@
-package com.rem.factories;
+package com.rem.address;
 
-import com.rem.models.Address;
 import com.rem.repository.AddressRepository;
 import org.springframework.stereotype.Component;
-import com.rem.dto.address.AddressDTO;
 
 @Component
 public class AddressFactory {

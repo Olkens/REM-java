@@ -1,10 +1,7 @@
-package com.rem.services;
+package com.rem.realEstate;
 
-import com.rem.dto.realEstate.RealEstateDTO;
-import com.rem.factories.AddressFactory;
-import com.rem.factories.RealEstateFactory;
-import com.rem.models.Address;
-import com.rem.models.RealEstate;
+import com.rem.address.AddressFactory;
+import com.rem.address.Address;
 import com.rem.repository.RealEstateRepository;
 import org.springframework.stereotype.Service;
 
