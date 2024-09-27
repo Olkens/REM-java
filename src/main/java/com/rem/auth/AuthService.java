@@ -1,8 +1,7 @@
-package com.rem.services;
+package com.rem.auth;
 
-import com.rem.dto.LoginResponseDTO;
-import com.rem.models.Person;
-import com.rem.models.Role;
+import com.rem.person.Person;
+import com.rem.role.Role;
 import com.rem.repository.PersonRepository;
 import com.rem.repository.RoleRepository;
 import jakarta.transaction.Transactional;

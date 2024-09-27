@@ -1,4 +1,4 @@
-package com.rem.controllers;
+package com.rem.person;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;

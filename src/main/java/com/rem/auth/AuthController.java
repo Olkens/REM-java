@@ -1,9 +1,6 @@
-package com.rem.controllers;
+package com.rem.auth;
 
-import com.rem.dto.LoginResponseDTO;
-import com.rem.dto.RegistrationDTO;
-import com.rem.models.Person;
-import com.rem.services.AuthService;
+import com.rem.person.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

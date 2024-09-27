@@ -1,7 +1,5 @@
-package com.rem.factories;
+package com.rem.realEstate;
 
-import com.rem.dto.realEstate.RealEstateDTO;
-import com.rem.models.RealEstate;
 import org.springframework.stereotype.Component;
 
 @Component

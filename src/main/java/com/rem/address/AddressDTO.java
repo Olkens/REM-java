@@ -1,4 +1,4 @@
-package com.rem.dto.address;
+package com.rem.address;
 
 public class AddressDTO {
     public String city;

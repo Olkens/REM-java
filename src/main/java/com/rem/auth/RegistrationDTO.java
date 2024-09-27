@@ -1,4 +1,4 @@
-package com.rem.dto;
+package com.rem.auth;
 
 public class RegistrationDTO {
     private String username;

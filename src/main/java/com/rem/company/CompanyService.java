@@ -1,12 +1,11 @@
-package com.rem.services;
+package com.rem.company;
 
-import com.rem.models.Person;
-import com.rem.models.Role;
+import com.rem.person.Person;
+import com.rem.role.Role;
 import com.rem.repository.CompanyRepository;
 import com.rem.repository.PersonRepository;
 import com.rem.repository.RoleRepository;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
+import com.rem.person.PersonService;
 import org.springframework.stereotype.Service;
 
 @Service
