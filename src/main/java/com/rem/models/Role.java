@@ -7,6 +7,10 @@ import org.springframework.security.core.GrantedAuthority;
 @Entity
 public class Role implements GrantedAuthority {
 
+    final static String ROLE_ADMIN = "ROLE_ADMIN";
+    final static String ROLE_USER = "ROLE_USER";
+    final static String ROLE_COMPANY_ADMIN = "ROLE_COMPANY_ADMIN";
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "role_id")
