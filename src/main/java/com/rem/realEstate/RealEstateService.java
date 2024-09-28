@@ -26,7 +26,7 @@ public class RealEstateService {
 
     public RealEstate saveRealEstate(RealEstateDTO realEstateDTO) {
         RealEstate re = realEstateFactory.crateRealEstate(realEstateDTO);
-        Address address = addressFactory.createAddress(realEstateDTO.address);
+        Address address = addressFactory.createAddress(realEstateDTO.address());
         re.setAddress(address);
         realEstateRepository.save(re);
         return re;
