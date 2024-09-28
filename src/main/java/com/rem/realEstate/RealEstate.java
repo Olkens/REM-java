@@ -2,6 +2,8 @@ package com.rem.realEstate;
 
 import com.rem.address.Address;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 public class RealEstate {
@@ -77,9 +79,9 @@ public class RealEstate {
     }
 
     public void updateProperties(RealEstateDTO realEstateDTO) {
-        this.setName(realEstateDTO.name);
-        this.setCubicMeters(realEstateDTO.cubicMeters);
-        this.setPrice(realEstateDTO.price);
-        this.setName(realEstateDTO.name);
+        this.setName(realEstateDTO.name());
+        this.setCubicMeters(realEstateDTO.cubicMeters());
+        this.setPrice(realEstateDTO.price());
+        this.setName(realEstateDTO.name());
     }
 }

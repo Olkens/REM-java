@@ -14,9 +14,9 @@ public class AddressFactory {
 
     public Address createAddress(AddressDTO dto) {
         Address address = new Address();
-        address.setCity(dto.city);
-        address.setPostal(dto.postal);
-        address.setStreet(dto.street);
+        address.setCity(dto.city());
+        address.setPostal(dto.postal());
+        address.setStreet(dto.street());
         addressRepository.save(address);
         return address;
     }
