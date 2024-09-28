@@ -17,7 +17,7 @@ public class PersonService implements UserDetailsService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    private PersonRepository personRepository;
+    private final PersonRepository personRepository;
 
     public PersonService(PersonRepository personRepository) {
         this.personRepository = personRepository;

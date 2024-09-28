@@ -22,7 +22,6 @@ public class RealEstateController {
         return ResponseEntity.ok(realEstates);
     }
 
-    @Secured("ROLE_COMPANY_USER")
     @PostMapping("/")
     public ResponseEntity<RealEstate> saveRealEstate(@RequestBody RealEstateDTO dto) {
         RealEstate realEstate = realEstateService.saveRealEstate(dto);
